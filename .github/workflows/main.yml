@@ -10,7 +10,7 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
-    - name: Start Torque Sandbox
+    - name: Start Torque Env
       id: start-sandbox
       uses: QualiTorque/torque-start-environment@spaces
       with:
@@ -30,7 +30,7 @@ jobs:
         echo "Sandbox details are: ${{ steps.start-sandbox.outputs.environment_details }}"
         sleep 30
 
-    - name: Stop sandbox
+    - name: Stop Env
       uses: QualiTorque/torque-end-environment@dev
       with:
         space: Sample
