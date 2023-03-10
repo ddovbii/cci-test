@@ -15,8 +15,9 @@ jobs:
       uses: QualiTorque/torque-start-environment@v1
       with:
         space: dev
-        blueprint_name: nginx
+        blueprint_name: My nginx
         repository_name: qa-assets # new param
+        inputs: Name=webapp, "Bla bla"=torque
         environment_name: abc
         torque_token: ${{ secrets.TORQUE_TOKEN }}
         torque_hostname: preview.qtorque.io # only hostname, without schema
