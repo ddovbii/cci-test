@@ -15,6 +15,7 @@ steps:
     blueprint: '[Sample]Bitnami Nginx Helm Chart'
     sandbox: 'aece'
     inputs: 'replicaCount=1'
+
 - task: EndSandbox@0
   inputs:
     torqueEndpoint: 'Torque-Dmytro'
