@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Start Torque Sandbox
       id: start-sandbox
-      uses: QualiTorque/torque-start-environment@v1
+      uses: QualiTorque/torque-start-environment@dev
       with:
         space: dev
         blueprint_name: My nginx
@@ -31,7 +31,7 @@ jobs:
         sleep 30
 
     - name: Stop sandbox
-      uses: QualiTorque/torque-end-environment@v1  
+      uses: QualiTorque/torque-end-environment@dev
       with:
         space: Sample
         environment_id: ${{ steps.start-sandbox.outputs.environment_id }}
