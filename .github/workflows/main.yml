@@ -17,7 +17,7 @@ jobs:
         space: sample
         blueprint_name: "[Sample]Bitnami Nginx Helm Chart"
         repository_name: sample_blueprints # new param
-        inputs: replicaCount=1
+        inputs: replica Count=1
         environment_name: abc
         torque_token: ${{ secrets.TORQUE_TOKEN }}
         timeout: 5 # set timeout in minutes if you want to wait until env is active
@@ -35,4 +35,4 @@ jobs:
         space: Sample
         environment_id: ${{ steps.start-sandbox.outputs.environment_id }}
         torque_token: ${{ secrets.TORQUE_TOKEN }}
-        torque_hostname: preview.qtorque.io
+#         torque_hostname: preview.qtorque.io
