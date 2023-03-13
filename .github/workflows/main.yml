@@ -7,7 +7,7 @@ on:
 jobs:
   test-with-torque:
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v3
     - name: Start Torque Env
