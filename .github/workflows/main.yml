@@ -15,9 +15,9 @@ jobs:
       uses: QualiTorque/torque-start-environment@spaces
       with:
         space: dbs
-        blueprint_name: s3-drift
-        repository_name: torque-demo # new param
-        inputs: host=k8s-dbs
+        blueprint_name: "[Sample]Bitnami Nginx Helm Chart"
+        repository_name: sample_blueprints # new param
+        inputs: replicaCount=1
         environment_name: abc
         torque_token: ${{ secrets.TORQUE_TOKEN }}
         timeout: 5 # set timeout in minutes if you want to wait until env is active
