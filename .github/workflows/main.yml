@@ -12,10 +12,10 @@ jobs:
     - uses: actions/checkout@v3
     - name: Start Torque Env
       id: start-sandbox
-      uses: QualiTorque/torque-start-environment@spaces
+      uses: QualiTorque/torque-start-environment@dev
       with:
         space: sample
-        blueprint_name: "[Sample]Bitnami Nginx Helm Chart"
+        blueprint_name: \[Sample\]Bitnami Nginx Helm Chart
         repository_name: sample_blueprints # new param
         inputs: replica Count=1
         environment_name: abc
